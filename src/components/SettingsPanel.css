@@ -1,0 +1,88 @@
+.settings-panel {
+  width: 300px;
+  border-left: 1px solid #ddd;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.settings-header {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+.settings-body {
+  padding: 15px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+.settings-body label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.settings-body input, .settings-body textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.chat-id-wrapper {
+    display: flex;
+    gap: 5px;
+}
+.chat-id-wrapper input {
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+.settings-body small {
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #666;
+}
+.save-settings-button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.activate-button, .deactivate-button {
+  flex: 1;
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.activate-button {
+    background-color: #007bff;
+}
+.deactivate-button {
+    background-color: #dc3545;
+}
+.activate-button:disabled, .deactivate-button:disabled {
+    background-color: #a0a0a0;
+}
+.settings-body hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
